@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "849280748",
+    "hash" : "412858067",
     "id" : "D7600335",
-    "lastKnownWriteTime" : 1527613367,
-    "last_content_update" : 1527613367564,
+    "lastKnownWriteTime" : 1527614286,
+    "last_content_update" : 1527614286247,
     "path" : "~/GitHub/106bigdatacguimhw2-IMCGU/InternationalStudents.Rmd",
     "project_path" : "InternationalStudents.Rmd",
     "properties" : {
-        "cursorPosition" : "250,2",
-        "scrollLine" : "245"
+        "cursorPosition" : "258,60",
+        "scrollLine" : "253"
     },
     "relative_order" : 1,
     "source_on_save" : false,

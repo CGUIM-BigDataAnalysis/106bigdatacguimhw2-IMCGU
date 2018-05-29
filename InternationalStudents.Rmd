@@ -28,6 +28,8 @@ U106<- read_csv("http://stats.moe.gov.tw/files/detail/106/106_ab105_S.csv")
 ```
 
 ### 哪些國家來台灣唸書的學生最多呢？ 
+
+  大部分是亞洲國家學生，大都是東南亞。
 ```{r warning=FALSE,message=FALSE,tidy=TRUE}
 #這是R Code Chunk
 C103<-data.frame(country=C103$國別,people103=C103$`學位生-正式修讀學位外國生`+C103$`學位生-僑生(含港澳)`+C103$`學位生-正式修讀學位陸生`+
@@ -65,7 +67,7 @@ knitr::kable(C103104105106[1:10,c(1,6)])
 ### 哪間大學的境外生最多呢？
 
 
-
+  第一名是無法區別，第二名是國立師範大學。我想是來台灣學中文。
 ```{r warning=FALSE,message=FALSE,tidy=TRUE}
 #這是R Code Chunk
 
@@ -106,7 +108,7 @@ knitr::kable(U103104105106[1:10,c(1,6)])
 
 ### 各個國家來台灣唸書的學生人數條狀圖
 
- 因為國家數太多，所以顯示前十名，剩下以其他表示。
+ 因為國家數太多，所以顯示前十名，剩下以其他表示。中國和馬來西亞排前兩名。
 ```{r warning=FALSE,message=FALSE,tidy=TRUE}
 #這是R Code Chunk
 library(ggplot2)
@@ -168,6 +170,8 @@ a<-subset(tw,`學年度`>102)%>%
 ```
 
 ### 哪間大學的出國交流學生數最多呢？
+
+ 第一名是台大，可能是他的交換學生多。
 ```{r warning=FALSE,message=FALSE,tidy=TRUE}
 #這是R Code Chunk
 c<-subset(tw,`學年度`>102)%>%
@@ -194,6 +198,8 @@ ggplot()+geom_bar(data=groupcountry1,aes(x=`對方學校(機構)國別(地區)`,
 ```
 
 ### 台灣大專院校的學生最喜歡去哪些國家進修交流面量圖
+
+  從數據來看和我的生活經驗一樣，中日美確實是大部分學生留學的選擇。
 ```{r warning=FALSE,message=FALSE,tidy=TRUE}
 #這是R Code Chunk
 countryname<-read_csv("CountriesComparisionTable.csv")
@@ -234,6 +240,8 @@ knitr::kable(world[1:10,c(2,3)])
 ```
 
 ### 台灣學生最喜歡去哪些國家留學面量圖
+ 
+ 台灣學生最喜歡去美國留學還有澳洲紐西蘭。
 ```{r FromTWNAbMap}
 #這是R Code Chunk
 countryname<-read_csv("CountriesComparisionTable.csv")
@@ -248,7 +256,7 @@ A8
 
 請問來台讀書與離台讀書的來源國與留學國趨勢是否相同(5分)？想來台灣唸書的境外生，他們的母國也有很多台籍生嗎？請圖文並茂說明你的觀察(10分)。
 
-  趨勢不同，中日美韓也有很多台灣生。
+  趨勢不同，中日美韓也有很多台灣生。亞洲地區台灣和台灣去亞洲地區國家念書的人數比較多，趨勢也差不多，我認為是地緣關係。
 ```{r FromTWNA1}
 #這是R Code Chunk
 
