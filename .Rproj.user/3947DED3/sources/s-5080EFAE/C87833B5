@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1526976491387.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2371320729",
+    "id" : "C87833B5",
+    "lastKnownWriteTime" : 1527613470,
+    "last_content_update" : 1527613470980,
+    "path" : "~/GitHub/106bigdatacguimhw2-IMCGU/hw2.R",
+    "project_path" : "hw2.R",
+    "properties" : {
+        "cursorPosition" : "165,2",
+        "scrollLine" : "139",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

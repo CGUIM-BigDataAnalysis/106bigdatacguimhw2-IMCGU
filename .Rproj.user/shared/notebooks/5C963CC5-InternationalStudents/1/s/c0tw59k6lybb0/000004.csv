@@ -1,0 +1,13 @@
+"0","#這是R Code Chunk"
+"0","world$X4=NULL"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","world$X5=NULL"
+"0","world$X6=NULL"
+"0","world<-arrange(world,desc(world$總人數))"
+"0","knitr::kable(world[1:10,c(2,3)])"

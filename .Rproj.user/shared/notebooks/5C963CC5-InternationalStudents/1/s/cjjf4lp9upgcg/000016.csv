@@ -1,0 +1,30 @@
+"0","#這是R Code Chunk"
+"0","library(choroplethr)"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","library(choroplethrMaps)"
+"0","countryname<-read_csv(""CountriesComparisionTable.csv"")"
+"2","Parsed with column specification:
+cols(
+  ISO3 = col_character(),
+  English = col_character(),
+  Taiwan = col_character()
+)
+"
+"0","colnames(countryname)<-c(""ISO3"",""English"",""country"")"
+"0","TotalCountry<-merge(C103104105106[,c(1,6)],countryname,by=""country"")"
+"0","colnames(TotalCountry)<-c(""country"",""value"",""ISO3"",""region"")"
+"0","TotalCountry[5,2]<-TotalCountry[5,2]+TotalCountry[91,2]+TotalCountry[159,2]"
+"0","TotalCountry[107,2]<-TotalCountry[107,2]+TotalCountry[108,2]"
+"0","TotalCountry<-TotalCountry%>%"
+"0","  subset(region!=""Unmatch"")%>%"
+"0","  subset(country!=""索馬利蘭共和國"")"
+"0","A3<-country_choropleth(TotalCountry)"
+"2","Your data.frame contains the following regions which are not mappable: Singapore"
+"2","The following regions were missing and are being set to NA: afghanistan, angola, montenegro, qatar, western sahara, south sudan, somaliland, east timor, taiwan, vanuatu, central african republic, northern cyprus, djibouti, eritrea, antarctica, equatorial guinea, kosovo, lesotho"
+"0","A3"

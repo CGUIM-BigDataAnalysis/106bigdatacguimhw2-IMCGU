@@ -1,0 +1,4 @@
+"0","ggplot()+geom_bar(data=groupcountry,"
+"0","                  aes(x=country,y=total),"
+"0","                  stat = ""identity"","
+"0","                  fill = ""green"")"

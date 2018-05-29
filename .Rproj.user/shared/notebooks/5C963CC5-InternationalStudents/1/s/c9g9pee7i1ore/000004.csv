@@ -1,0 +1,27 @@
+"0","#這是R Code Chunk"
+"0","countryname<-read_csv(""CountriesComparisionTable.csv"")"
+"2","Parsed with column specification:
+cols(
+  ISO3 = col_character(),
+  English = col_character(),
+  Taiwan = col_character()
+)
+"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","colnames(countryname)<-c(""ISO3"",""English"",""中文"")"
+"0","outNum<-a"
+"0","colnames(outNum)<-c(""國名"",""count"")"
+"0","EoutNum<-merge(outNum,countryname,by.x=""國名"",by.y=""中文"")"
+"0","colnames(EoutNum)<-c(""國名"",""value"",""ISO3"",""region"")"
+"0","EoutNum<-EoutNum%>%"
+"0","  subset(region!=""Unmatch"")"
+"0","A6<-country_choropleth(EoutNum,num_colors=9)"
+"2","Your data.frame contains the following regions which are not mappable: Singapore"
+"2","The following regions were missing and are being set to NA: afghanistan, angola, azerbaijan, moldova, madagascar, macedonia, mali, myanmar, montenegro, mozambique, mauritania, burundi, namibia, nigeria, nicaragua, pakistan, papua new guinea, benin, paraguay, rwanda, western sahara, sudan, burkina faso, south sudan, senegal, sierra leone, el salvador, somaliland, somalia, suriname, syria, chad, togo, tajikistan, turkmenistan, east timor, bulgaria, trinidad and tobago, taiwan, united republic of tanzania, uganda, ukraine, uruguay, uzbekistan, the bahamas, venezuela, vanuatu, yemen, zambia, zimbabwe, bosnia and herzegovina, belarus, albania, belize, bolivia, bhutan, botswana, central african republic, united arab emirates, ivory coast, cameroon, democratic republic of the congo, republic of congo, cuba, northern cyprus, cyprus, argentina, djibouti, dominican republic, algeria, eritrea, armenia, ethiopia, fiji, gabon, georgia, ghana, antarctica, guinea, gambia, guinea bissau, equatorial guinea, guatemala, guyana, honduras, haiti, iran, iraq, jamaica, kazakhstan, kenya, kyrgyzstan, kosovo, laos, lebanon, liberia, libya, lesotho, luxembourg"
+"0","A6"

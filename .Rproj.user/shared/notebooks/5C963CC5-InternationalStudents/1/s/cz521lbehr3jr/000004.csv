@@ -1,0 +1,17 @@
+"0","#這是R Code Chunk"
+"0","groupcountry1<-b%>%"
+"0","  group_by(`對方學校(機構)國別(地區)`)%>%"
+"0","  tally(ncountry,sort=TRUE)%>%"
+"0","  group_by(`對方學校(機構)國別(地區)` = factor(c(`對方學校(機構)國別(地區)`[1:10], rep(""Other"", n() - 10)),"
+"0","                                     levels = c(`對方學校(機構)國別(地區)`[1:10], ""Other"")))%>%tally(n)"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","colnames(groupcountry1)<-c(""對方學校(機構)國別(地區)"",""ncountry"")"
+"0","ggplot()+geom_bar(data=groupcountry1,aes(x=`對方學校(機構)國別(地區)`,y=ncountry),"
+"0","                  stat = ""identity"","
+"0","                  fill = ""green"")"

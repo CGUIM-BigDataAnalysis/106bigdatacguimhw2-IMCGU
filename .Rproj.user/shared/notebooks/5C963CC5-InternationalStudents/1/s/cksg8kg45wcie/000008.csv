@@ -1,0 +1,13 @@
+"0","#這是R Code Chunk"
+"0","a<-subset(tw,`學年度`>102)%>%"
+"0","  group_by(`對方學校(機構)國別(地區)`)%>%"
+"0","  summarise(ncountry=sum(`小計`))"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","  b<-arrange(a,desc(ncountry))"
+"0"," knitr::kable(b[1:10,])"

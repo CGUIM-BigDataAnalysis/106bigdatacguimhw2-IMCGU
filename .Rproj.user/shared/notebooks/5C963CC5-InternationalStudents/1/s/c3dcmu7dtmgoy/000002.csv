@@ -1,0 +1,23 @@
+"0","#這是R Code Chunk"
+"0","countryname<-read_csv(""CountriesComparisionTable.csv"")"
+"2","Parsed with column specification:
+cols(
+  ISO3 = col_character(),
+  English = col_character(),
+  Taiwan = col_character()
+)
+"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","colnames(countryname)<-c(""ISO3"",""English"",""國別"")"
+"0","Eworld<-merge(world,countryname,by=""國別"")"
+"0","colnames(Eworld)<-c(""國名"",""洲別"",""value"",""ISO3"",""region"")"
+"0","A8<-country_choropleth(Eworld)"
+"2","Your data.frame contains the following regions which are not mappable: Singapore"
+"2","The following regions were missing and are being set to NA: afghanistan, angola, azerbaijan, moldova, madagascar, mexico, macedonia, mali, myanmar, montenegro, mongolia, mozambique, mauritania, burundi, malawi, namibia, france, niger, nigeria, nicaragua, oman, pakistan, panama, peru, papua new guinea, north korea, benin, portugal, paraguay, israel, qatar, romania, rwanda, western sahara, saudi arabia, sudan, burkina faso, south sudan, senegal, solomon islands, sierra leone, el salvador, somaliland, somalia, republic of serbia, suriname, slovakia, slovenia, swaziland, syria, chad, togo, tajikistan, turkmenistan, east timor, bulgaria, trinidad and tobago, tunisia, turkey, taiwan, united republic of tanzania, uganda, ukraine, uruguay, uzbekistan, the bahamas, venezuela, vanuatu, yemen, south africa, zambia, zimbabwe, bosnia and herzegovina, belarus, albania, belize, bolivia, brazil, bhutan, botswana, central african republic, switzerland, chile, united arab emirates, china, ivory coast, cameroon, democratic republic of the congo, republic of congo, colombia, costa rica, cuba, northern cyprus, cyprus, argentina, czech republic, djibouti, dominican republic, algeria, ecuador, egypt, eritrea, spain, armenia, estonia, ethiopia, fiji, gabon, georgia, ghana, antarctica, guinea, gambia, guinea bissau, equatorial guinea, greece, guatemala, guyana, honduras, croatia, haiti, hungary, ireland, iran, iraq, italy, jamaica, jordan, kazakhstan, kenya, kyrgyzstan, cambodia, south korea, kosovo, kuwait, laos, lebanon, liberia, libya, lesotho, lithuania, luxembourg, latvia, morocco"
+"0","A8"

@@ -1,0 +1,143 @@
+"0","#é€™æ˜¯R Code Chunk"
+"0","library(readr)"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","library(dplyr)"
+"0","library(ggplot2)"
+"0","C103<- read_csv(""http://stats.moe.gov.tw/files/detail/103/103_ab103_C.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¬w§O = col_character(),
+  °ê§O = col_character(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í` = col_integer(),
+  `¾Ç¦ì¥Í-¹´¥Í(§t´ä¿D)` = col_integer(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì³°¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°ê¥æ´«¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j³°¬ã­×¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-®ü«C¯Z` = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","U103<- read_csv(""http://stats.moe.gov.tw/files/detail/103/103_ab103_S.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç®ÕÃþ«¬ = col_character(),
+  ¾Ç®Õ¥N½X = col_character(),
+  ¾Ç®Õ¦WºÙ = col_character(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í` = col_integer(),
+  `¾Ç¦ì¥Í-¹´¥Í(§t´ä¿D)` = col_integer(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì³°¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°ê¥æ´«¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j³°¬ã­×¥Í` = col_character(),
+  `«D¾Ç¦ì¥Í-®ü«C¯Z` = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","C104<- read_csv(""http://stats.moe.gov.tw/files/detail/104/104_ab104_C.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¬w§O = col_character(),
+  °ê§O = col_character(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í` = col_integer(),
+  `¾Ç¦ì¥Í-¹´¥Í(§t´ä¿D)` = col_integer(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì³°¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°ê¥æ´«¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j³°¬ã­×¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-®ü«C¯Z` = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","U104<- read_csv(""http://stats.moe.gov.tw/files/detail/104/104_ab104_S.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç®ÕÃþ«¬ = col_character(),
+  ¾Ç®Õ¥N½X = col_character(),
+  ¾Ç®Õ¦WºÙ = col_character(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í` = col_integer(),
+  `¾Ç¦ì¥Í-¹´¥Í(§t´ä¿D)` = col_integer(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì³°¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°ê¥æ´«¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j³°¬ã­×¥Í` = col_character(),
+  `«D¾Ç¦ì¥Í-®ü«C¯Z` = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","C105<- read_csv(""http://stats.moe.gov.tw/files/detail/105/105_ab105_C.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¬w§O = col_character(),
+  °ê§O = col_character(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í = col_integer(),
+  `¾Ç¦ì¥Í_¹´¥Í(§t´ä¿D)` = col_integer(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì³°¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°ê¥æ´«¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª = col_integer(),
+  «D¾Ç¦ì¥Í_¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¤j³°¬ã­×¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_®ü«C¯Z = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","U105<- read_csv(""http://stats.moe.gov.tw/files/detail/105/105_ab105_S.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç®ÕÃþ«¬ = col_character(),
+  ¾Ç®Õ¥N½X = col_character(),
+  ¾Ç®Õ¦WºÙ = col_character(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í = col_integer(),
+  `¾Ç¦ì¥Í_¹´¥Í(§t´ä¿D)` = col_integer(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì³°¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°ê¥æ´«¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª = col_integer(),
+  «D¾Ç¦ì¥Í_¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¤j³°¬ã­×¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_®ü«C¯Z = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","C106<- read_csv(""http://stats.moe.gov.tw/files/detail/106/106_ab105_C.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¬w§O = col_character(),
+  °ê§O = col_character(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í = col_integer(),
+  `¾Ç¦ì¥Í_¹´¥Í(§t´ä¿D)` = col_integer(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì³°¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°ê¥æ´«¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª = col_integer(),
+  «D¾Ç¦ì¥Í_¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¤j³°¬ã­×¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_®ü«C¯Z = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","U106<- read_csv(""http://stats.moe.gov.tw/files/detail/106/106_ab105_S.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç®ÕÃþ«¬ = col_character(),
+  ¾Ç®Õ¥N½X = col_character(),
+  ¾Ç®Õ¦WºÙ = col_character(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í = col_integer(),
+  `¾Ç¦ì¥Í_¹´¥Í(§t´ä¿D)` = col_integer(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì³°¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°ê¥æ´«¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª = col_integer(),
+  «D¾Ç¦ì¥Í_¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¤j³°¬ã­×¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_®ü«C¯Z = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
